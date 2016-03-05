@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160304175323) do
+ActiveRecord::Schema.define(version: 20160305050843) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,7 +33,8 @@ ActiveRecord::Schema.define(version: 20160304175323) do
     t.decimal "close"
     t.decimal "high"
     t.decimal "low"
-    t.integer "volume"
+    t.integer "volume",    limit: 8
+    t.decimal "adj_close"
   end
 
   add_index "quotes", ["symbol", "date"], name: "index_quotes_on_symbol_and_date", unique: true, using: :btree

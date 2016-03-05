@@ -6,5 +6,6 @@ gem 'standalone_migrations'
 gem 'pg'
 gem 'rake'
 gem 'activerecord'
+gem 'rest-client'
 
 # gem "rails"

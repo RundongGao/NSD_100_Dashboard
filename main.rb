@@ -1,6 +1,17 @@
+require 'csv'
 require 'pry'
-require_relative 'data/csv_importer'
+require_relative 'importer/company_importer'
 require_relative 'db/models.rb'
-include CsvImporter
+require_relative 'importer/quote_importer'
 
-CsvImporter.import_company_table 'data/companylist.csv','data/nasdaq100.csv'
+include CompanyImporter
+include QuoteImporter
+
+CompanyImporter.ndx_companies 'data/companylist.csv','data/nasdaq100.csv'
+puts 'populating company data successful'
+
+CompanyImporter.ndx_entry
+puts 'added ndx to company table'
+
+QuoteImporter.quote_all_2014
+puts 'populating quote data successful'
