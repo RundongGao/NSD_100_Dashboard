@@ -1,0 +1,19 @@
+development: &default
+  adapter: postgresql	
+  encoding: unicode	
+  host: localhost
+  port: 5432
+  database: nsd_100
+  pool: 5
+  username: nsd_100_admin
+  password: -<3Y%Y"_xfr?nai	
+  reconnect: true
+
+staging: 		
+  <<: *default		
+
+test:		
+  <<: *default  
+
+production:		
+  <<: *default 		
