@@ -39,9 +39,64 @@ TODO:
 	transfrom company data (only keep those 100)
 
 Mar. 4th
-12:31 
+
+10:40 ~ 12:31 
 all table created
-now let's load company data in~~
+next let's load company data in~~
+1:20
+set up active record gave some hard time...
+now ruby code can interact with database without using sql
+next write a csv importor
+
+18:33 ~ 19:52
+csv importer finished
+company table populated
+next build yahoo impoter
+
+20:43
+
+the following api 
+http://ichart.finance.yahoo.com/table.csv?s=WU&a=1&b=1&c=2010&d=1&e=31&f=2010&g=d&ignore=.csv
+will return data for Feberary..
+
+but if change the a=1 to a=0 and a=2 to a=1
+then we will get Jan. data...
+
+so yahoo api counts months from 0 to 11 instead of 1 to 12-_-!!!
+
+20:58
+get my first api response in csv from yahoo finance api through ruby code:D
+
+stopping here
+
+10:00
+start
+building api caller
+
+10:11
+api caller built!
+start build quote importer
+	load data with caller returned to database
+http://ichart.finance.yahoo.com/table.csv?s=AAPL&a=0&b=1&c=2014&d=11&e=31&f=2014&g=d&ignore=.csv
+
+10:29
+LILA, KHC, LILAK data cannot find..
+
+11:19
+data quote loaded!!!
+TODO:
+	clean up/ refactor code
+	work on rescue and retry
+	need to add one more "company" : NSD-100
+	populate data for NSD-100
+
+
+
+
+
+
+
+
 	
 
 
