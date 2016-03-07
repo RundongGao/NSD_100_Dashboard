@@ -16,4 +16,12 @@ test:
   <<: *default  
 
 production:		
-  <<: *default 		
+  adapter: postgresql 
+  encoding: unicode 
+  host: ndx100.c3n3fi9grsp4.us-west-2.rds.amazonaws.com
+  port: 5432
+  database: ndx100
+  pool: 5
+  username: ndx_100_admin
+  password: <%= ENV["NDX_DB_PASSWORD"] %>
+  reconnect: true		
