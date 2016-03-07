@@ -38,6 +38,9 @@ TODO:
 	load company data in
 	transfrom company data (only keep those 100)
 
+11:30 ~ 13:49
+finished popluating company table:D
+
 Mar. 4th
 
 10:40 ~ 12:31 
@@ -91,13 +94,21 @@ TODO:
 	populate data for NSD-100
 
 
+two days on tableau
+
+
+EnihRGPD5TYPEIJ
 
 
 
-
-
-
-	
-
-
+14:20
+create db instance on AWS
+14:50
+connnected to new db:D
+15:16
+start to change code to talk to new db
+as production enviornment
+15:41
+code is talking to remote db now
+start to create table and populate data with ruby code
 
