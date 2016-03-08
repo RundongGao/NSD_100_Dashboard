@@ -6,7 +6,6 @@ require 'erb'
 
 template = ERB.new File.new('db/config.yml').read
 @dbconfig = YAML.load template.result(binding)
-binding.pry
 ActiveRecord::Base.establish_connection @dbconfig[@environment]
 
 =begin
