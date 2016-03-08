@@ -18,7 +18,7 @@ test:
 production:		
   adapter: postgresql 
   encoding: unicode 
-  host: ndx100.c3n3fi9grsp4.us-west-2.rds.amazonaws.com
+  host: ndx-100.c3n3fi9grsp4.us-west-2.rds.amazonaws.com
   port: 5432
   database: ndx100
   pool: 5
