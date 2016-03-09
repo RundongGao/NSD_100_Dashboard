@@ -9,6 +9,9 @@ change information in db/config.yml file to your own database info
 ## step 3:
 `bundle install`
 ## step 4:
+  execute `rake:db create` to create database. 
+  execute `rake:db migrate` to create schema for database.
+## step 5:
   to fetching all data in 2014 and 2016 to your database, execute:
     `ruby main.rb`
   to update data, execute:
