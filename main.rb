@@ -13,5 +13,8 @@ puts 'populating company data successful'
 CompanyImporter.ndx_entry
 puts 'added ndx to company table'
 
-QuoteImporter.quote_all_2014
-puts 'populating quote data successful'
+QuoteImporter.import '2014'
+puts 'populating quote data 2014 successful'
+
+QuoteImporter.import '2016'
+puts 'populating quote data 2106 successful'
